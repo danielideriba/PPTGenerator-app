@@ -1,16 +1,13 @@
 import { Form, Button } from 'react-bootstrap';
 import pptxgen from "pptxgenjs";
-import { Formik, Field, ErrorMessage } from 'formik';
+import { Formik } from 'formik';
 
-import {parse, stringify, toJSON, fromJSON} from 'flatted';
 import './App.css';
 
 import { IMAGE_PATHS } from "./enums.mjs";
 
 
 const BKGD_LTGRAY = "F1F1F1";
-const BKGD_LTWHITE = "FFFFFF";
-const COLOR_BLUE = "0088CC";
 const BKGD_BACKGROUND = "71CDD6";
 const COLOR_BLACK = "000000";
 const QUESTION_BOX_HEIGHT = 0.50;
@@ -19,8 +16,8 @@ const QUESTION_BOX_WIDTH = 5.5;
 const QUESTION1_X  = 4.5;
 const QUESTION1_Y  = 0.30
 const SPACE_BOX    =  0.30
-const QUESTION2_Y  = QUESTION1_Y + QUESTION_BOX_HEIGHT + SPACE_BOX; //0.60
-const QUESTION3_Y  = QUESTION2_Y + QUESTION_BOX_HEIGHT + SPACE_BOX; // 0.60 + 0.50
+const QUESTION2_Y  = QUESTION1_Y + QUESTION_BOX_HEIGHT + SPACE_BOX; 
+const QUESTION3_Y  = QUESTION2_Y + QUESTION_BOX_HEIGHT + SPACE_BOX;
 const QUESTION4_Y  = QUESTION3_Y + QUESTION_BOX_HEIGHT + SPACE_BOX;
 const QUESTION5_Y  = QUESTION4_Y + QUESTION_BOX_HEIGHT + SPACE_BOX;
 const QUESTION6_Y  = QUESTION5_Y + QUESTION_BOX_HEIGHT + SPACE_BOX;
